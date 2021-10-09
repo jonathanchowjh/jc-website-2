@@ -64,7 +64,9 @@ export const CardHorizontal = (props: {
     >
       <div className="row g-0 overflow-hidden">
         <div className={`overflow-hidden vert-center ${props.cssClassImageSize ? props.cssClassImageSize : "col-sm-4 d-none d-sm-block"}`}>
-          <img src={props.image ? props.image : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"}
+          <img src={props.image && props.image.length > 0 ? (
+              props.image[0] == "/" ? process.env.PUBLIC_URL + props.image : props.image
+            ) : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"}
             className="img-fluid rounded float-left" alt="..."
           />
         </div>
@@ -268,7 +270,9 @@ export const BadgeIcon = (props: {
       onClick={props.link ? () => window.open(props.link, '_blank') : () => {}}
     >
       <img className="bg-transparent border-0 rounded" style={{ height: "2.5em", width: "2.5em", objectFit : "contain" }}
-        src={props.image ? props.image : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"}
+        src={props.image && props.image.length > 0 ? (
+          props.image[0] == "/" ? process.env.PUBLIC_URL + props.image : props.image
+        ) : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"}
       />
       <span className="mx-2 weight-3 vert-center grey-1"><span className="">{props.title ? props.title : "TITLE"}</span></span>
       
