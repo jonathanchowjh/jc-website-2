@@ -22,6 +22,9 @@ const IntroScreen = () => {
       <BadgeIconList
         list={content.profile.links}
       />
+      <BadgeIconList
+        list={content.contact}
+      />
       
 
       <Spacer css={{ height: 20 }} />
@@ -67,6 +70,9 @@ const IntroScreen = () => {
       <Spacer css={{ height: 20 }} />
       <Title title="Contact" id="contact" />
       <Spacer css={{ height: 20 }} />
+      <BadgeIconList
+        list={content.profile.links}
+      />
       <BadgeIconList
         list={content.contact}
       />
