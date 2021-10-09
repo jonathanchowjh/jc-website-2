@@ -1,12 +1,13 @@
 import React from "react"
 import {
-  CardHorizontal, Title, CardHorizontalList, Spacer, TitleSmall, BadgeIconList, CardHorizontalListFullWidth
+  CardHorizontal, Title, CardHorizontalList, Spacer, TitleSmall, BadgeIconList, CardHorizontalListFullWidth, TypingDiv
 } from "../common/Elements"
 
 const IntroScreen = () => {
   const [content, setContent] = React.useState(initState)
   return (
     <div className="">
+      <Spacer cssClass="m-5" />
       {/*CARD PROFILE*/}
       <CardHorizontal
         css={{ maxHeight: "17em" }}
@@ -17,12 +18,14 @@ const IntroScreen = () => {
         tags={content.profile.tags}
         image={content.profile.image}
       />
+      <TypingDiv />
       <BadgeIconList
         list={content.profile.links}
       />
+      
 
       <Spacer css={{ height: 20 }} />
-      <Title title="Projects" />
+      <Title title="Projects" id="projects" />
       <Spacer css={{ height: 20 }} />
       <CardHorizontalList
         list={content.projects}
@@ -36,7 +39,7 @@ const IntroScreen = () => {
       />
 
       <Spacer css={{ height: 20 }} />
-      <Title title="Skills" />
+      <Title title="Skills" id="skills" />
       <Spacer css={{ height: 20 }} />
       {
         content.skills.map((ele, idx) => {
@@ -53,7 +56,7 @@ const IntroScreen = () => {
       }
 
       <Spacer css={{ height: 20 }} />
-      <Title title="Experiences" />
+      <Title title="Experiences" id="experiences" />
       <Spacer css={{ height: 20 }} />
       <CardHorizontalListFullWidth
         list={content.experiences}
@@ -62,7 +65,7 @@ const IntroScreen = () => {
       />
 
       <Spacer css={{ height: 20 }} />
-      <Title title="Contact" />
+      <Title title="Contact" id="contact" />
       <Spacer css={{ height: 20 }} />
       <BadgeIconList
         list={content.contact}
@@ -152,7 +155,7 @@ const initState = {
         },
         {
           title: "Polygon",
-          image: "https://polygon.technology/media-kit/matic-token-icon.svg"
+          image: "https://cryptologos.cc/logos/polygon-matic-logo.png"
         },
       ]
     },
@@ -223,7 +226,7 @@ const initState = {
         },
         {
           title: "AWS ec2 ebs s3",
-          image: "https://metal.equinix.com/media/pages/images/5ef0b4eba35ab2d6180b0bca7e46b6f9/y7N8-aws.ecs.logo.2.png"
+          image: "https://cdn.iconscout.com/icon/free/png-256/aws-1869025-1583149.png"
         }
       ]
     },

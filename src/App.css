@@ -76,3 +76,57 @@ body {
 
 .vert-center { display: flex; align-items: center; justify-content: center; }
 .preline { white-space: pre-line; }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.typing-wrapper{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+.typing-wrapper .typing-static-txt{
+  color: var(--grey-1);
+  font-size: 60px;
+  font-weight: 400;
+}
+.typing-wrapper .typing-dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.typing-dynamic-txts li{
+  list-style: none;
+  color: var(--highlight-2);
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.typing-dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.typing-dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--dark-1);
+  border-left: 2px solid var(--highlight-2);
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}

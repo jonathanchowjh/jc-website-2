@@ -10,11 +10,13 @@ export const Spacer = (props: {
 export const Title = (props: {
   title: string;
   css?: { [key: string]: any };
+  id?: string;
 }) => {
   return (
     <div
       className={`size-4 weight-4 primary-highlight-1 text-center`}
       style={{ ...props.css }}
+      id={props.id ? props.id : undefined}
     >
       {props.title}
     </div>
@@ -294,6 +296,22 @@ export const BadgeIconList = (props: {
           )
         }) : <></>
       }
+    </div>
+  )
+}
+
+export const TypingDiv = (props: {
+
+}) => {
+  return (
+    <div className="typing-wrapper">
+      <div className="typing-static-txt d-none d-md-block">I'm a</div>
+      <ul className="typing-dynamic-txts text-nowrap">
+        <li><span>Coder</span></li>
+        <li><span>Developer</span></li>
+        <li><span>Blockchain Dev</span></li>
+        <li><span>Data Eng</span></li>
+      </ul>
     </div>
   )
 }
