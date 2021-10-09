@@ -273,8 +273,8 @@ const initState = {
   experiences: [
     {
       title: "DHL Express",
-      subtitle: "Software Engineer Intern (Aug 2021 – Present)",
-      title2: "Scope of Work:",
+      subtitle: "(Aug 2021 – Present) International courier, package delivery and express mail service",
+      title2: "Software Engineer Intern",
       subtitle2: "Developed components in ASP.NET, for a new claims platform used by over 171 customer service agents.\n" +
       "Automated sql migration and pdf imaging, for the Credit and Debit Note system, validating 1000 notes daily.\n" +
       "Presented product walkthroughs and organised UA-Testing, by coordinating with 5 departments.",
@@ -284,8 +284,8 @@ const initState = {
     },
     {
       title: "KPIM",
-      subtitle: "Data Engineer Intern (May 2021 – Aug 2021)",
-      title2: "Scope of Work:",
+      subtitle: "(May 2021 – Aug 2021) Consulting, training, and deploying data solutions to help optimize business processes and development strategies.",
+      title2: "Data Engineer Intern",
       subtitle2: "Built multi-sink ETL dataflows on Azure Cloud and automated the pooling of data for PowerBI visualisations.\n" +
       "Researched optimal NLP techniques for geospace classifications, improved prediction accuracy to 83%.",
       image: "/images/kpim.png",
@@ -294,8 +294,8 @@ const initState = {
     },
     {
       title: "Road to Sangam",
-      subtitle: "Lead Developer, Co-Founder (Jun 2019 – Nov 2019)",
-      title2: "Scope of Work:",
+      subtitle: "(Jun 2019 – Nov 2019) An art-centric e-commerce platform that is a canvas for budding artists to display their art.",
+      title2: "Lead Developer, Co-Founder",
       subtitle2: "Led a development team of 5, to build an e-commerce marketplace that hosted 86 artists and 200 art pieces.\n" +
       "Created over 50 tables of NoSQL data, by coordinating business, design, and logistics requirements.",
       image: "/images/road-to-sangam.png",
@@ -304,8 +304,8 @@ const initState = {
     },
     {
       title: "Xen Capital",
-      subtitle: "Frontend Developer (​Apr 2019 – Aug 2019)",
-      title2: "Scope of Work:",
+      subtitle: "(​Apr 2019 – Aug 2019) Digital private wealth platform providing accredited investors and funds the ultimate access to a global private equity.",
+      title2: "Frontend Developer",
       subtitle2: "Developed client onboarding flow and landing pages in React, with passport verification and css animation.\n" +
       "Standardized front-end components in React and NPM, including pagination, dropdowns, and styles.",
       image: "/images/xen.png",
