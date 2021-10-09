@@ -314,7 +314,7 @@ const initState = {
     },
     {
       title: "+65 93857577",
-      image: "https://www.freeiconspng.com/uploads/phone-png-22.png",
+      image: "https://www.internetmatters.org/wp-content/uploads/2019/11/mobile-phone-icon.png",
     }
   ]
 }
