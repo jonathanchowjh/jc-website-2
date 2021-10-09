@@ -306,7 +306,8 @@ export const TypingDiv = (props: {
   return (
     <div className="typing-wrapper">
       <div className="typing-static-txt d-none d-md-block">I'm a</div>
-      <ul className="typing-dynamic-txts text-nowrap">
+      <Spacer cssClass="d-none d-md-block" css={{ flex: 0.2 }} />
+      <ul className="typing-dynamic-txts text-nowrap m-0 p-0">
         <li><span>Coder</span></li>
         <li><span>Developer</span></li>
         <li><span>Blockchain Dev</span></li>
