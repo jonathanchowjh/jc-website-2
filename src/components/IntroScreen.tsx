@@ -7,12 +7,12 @@ const IntroScreen = () => {
   const [content, setContent] = React.useState(initState)
   return (
     <div className="">
-      <Spacer cssClass="m-5" />
+      <Spacer cssClass="m-3 m-sm-0" css={{ height: 100 }} />
       {/*CARD PROFILE*/}
       <CardHorizontal
         css={{ maxHeight: "17em" }}
-        cssClass="bg-black-2 primary-light-1"
-        cssClassTitle="pt-3 size-4 primary-highlight-1"
+        cssClass="bg-primary-dark-2 primary-light-1 border-0"
+        cssClassTitle="pt-3 size-4 primary-light-1"
         title={content.profile.title}
         subtitle={content.profile.subtitle}
         tags={content.profile.tags}
@@ -85,7 +85,7 @@ export default IntroScreen
 
 const initState = {
   profile: {
-    title: "Jonathan Chow",
+    title: "\"Coding is today's language of Creativity\" - Maria Klawe",
     subtitle: "A computing student with a passion for software development",
     tags: ["Blockchain Enthusiast","React Enthusiast","Com Science Student"],
     image: "/images/profile.png",
@@ -117,21 +117,28 @@ const initState = {
       title: "Explorie NFT Platform",
       subtitle: "Incubated on the Cardstarter Accelerator, and Top 6 teams in Hack! Cardano 2021",
       image: "/images/explorie.jpeg",
-      tags: ["blockchain","nfts","plutus","react native"],
+      tags: ["Blockchain","NFTs","Plutus","React Native"],
       link: "https://github.com/jonathanchowjh/explorie-nft-mobile"
     },
     {
       title: "Jiak Ordering Platform",
       subtitle: "Mobile hawker ordering platform using a MERN stack, hosted on AWS",
       image: "/images/jiak.png",
-      tags: ["react","express","aws"],
+      tags: ["React","Express","AWS"],
       link: "https://github.com/jonathanchowjh/smu-cs-projects/tree/main/206_software_product_management/platform_patron"
     },
     {
       title: "Language Translator",
       subtitle: "English to Spanish Language Translator using encoder decoder attention models",
       image: "/images/tensorflow.png",
-      tags: ["tensorflow","nlp"],
+      tags: ["Tensorflow","NLP"],
+      link: "https://colab.research.google.com/drive/1Wm2CTEVO61t4OgnvxFmy93fMwYWaPH5Y?usp=sharing"
+    },
+    {
+      title: "SMU CS Projects",
+      subtitle: "Projects ranging from data analytics to cybersecurity. SMU Computer Science",
+      image: "/images/smu.png",
+      tags: ["Tensorflow","NLP"],
       link: "https://colab.research.google.com/drive/1Wm2CTEVO61t4OgnvxFmy93fMwYWaPH5Y?usp=sharing"
     }
   ],
@@ -143,7 +150,7 @@ const initState = {
       subtitle2: "An NFT platform connecting brands to people through NFT vouchers and collectables.\n" +
       "By using geo-tagged NFTs, we encourage ‘Pokemon Go’ inspired exploration of neighbourhoods and streets.",
       image: "/images/hack-cardano.png",
-      tags: ["blockchain","plutus","cardano"],
+      tags: ["Blockchain","Plutus","Cardano"],
       link: "https://github.com/jonathanchowjh/explorie-nft-mobile"
     }
   ],

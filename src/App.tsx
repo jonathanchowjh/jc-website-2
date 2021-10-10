@@ -10,7 +10,7 @@ function App() {
     window.addEventListener("hashchange", (e) => {
       let element = document.getElementById(window.location.hash.substring(1))
       if (element !== null) {
-        window.scrollTo(0, element.offsetTop - 100);
+        window.scrollTo(0, element.offsetTop - 120);
       }
     })
   }, [])

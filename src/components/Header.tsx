@@ -2,7 +2,7 @@ import React from "react"
 
 const Header = () => {
   return (
-    <nav className="navbar fixed-top d-flex flex-row justify-content-between bg bg-primary-dark-2">
+    <nav className="navbar fixed-top d-flex flex-row justify-content-between bg bg-primary-dark-2 shadow">
       <div className="container-lg App">
         <a className="nav-link active size-4 weight-3 primary-highlight-2" aria-current="page" href="#">Jonathan Chow</a>
         <ul className="nav vert-center">
