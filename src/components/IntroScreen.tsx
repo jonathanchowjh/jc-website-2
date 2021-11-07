@@ -1,15 +1,19 @@
 import React from "react"
 import {
-  CardHorizontal, Title, CardHorizontalList, Spacer, TitleSmall, BadgeIconList, CardHorizontalListFullWidth, TypingDiv
+  CardHorizontal, Title, CardHorizontalList, Spacer, TitleSmall, BadgeIconList, CardHorizontalListFullWidth, TypingDiv, SpinnerText, Poster
 } from "../common/Elements"
+// import { ShowDonut } from "../common/ElementsThreeD"
 
 const IntroScreen = () => {
   const [content, setContent] = React.useState(initState)
   return (
     <div className="">
       <Spacer cssClass="m-3 m-sm-0" css={{ height: 100 }} />
+      
       {/*CARD PROFILE*/}
-      <CardHorizontal
+      {/* <ShowDonut /> */}
+      <Poster />
+      {/* <CardHorizontal
         css={{ maxHeight: "17em" }}
         cssClass="bg-primary-dark-2 primary-light-1 border-0"
         cssClassTitle="pt-3 size-4 primary-light-1"
@@ -17,8 +21,9 @@ const IntroScreen = () => {
         subtitle={content.profile.subtitle}
         tags={content.profile.tags}
         image={content.profile.image}
-      />
-      <TypingDiv />
+      /> */}
+      {/* <SpinnerText /> */}
+      {/* <TypingDiv /> */}
       <BadgeIconList
         list={content.profile.links}
       />
@@ -115,9 +120,9 @@ const initState = {
   projects: [
     {
       title: "Explorie NFT Platform",
-      subtitle: "Incubated on the Cardstarter Accelerator, and Top 6 teams in Hack! Cardano 2021",
+      subtitle: "First Place in Hack! Cardano 2021; Incubated on Cardstarter for 100,000 USD",
       image: "/images/explorie.jpeg",
-      tags: ["Blockchain","NFTs","Plutus","React Native"],
+      tags: ["Blockchain","Rust","Anchor","Plutus","React Native"],
       link: "https://github.com/jonathanchowjh/explorie-nft-mobile"
     },
     {
@@ -138,15 +143,15 @@ const initState = {
       title: "SMU CS Projects",
       subtitle: "Projects ranging from data analytics to cybersecurity. SMU Computer Science",
       image: "/images/smu.png",
-      tags: ["Tensorflow","NLP"],
-      link: "https://colab.research.google.com/drive/1Wm2CTEVO61t4OgnvxFmy93fMwYWaPH5Y?usp=sharing"
+      tags: ["Data structures","OOP","AI","Cybersecurity"],
+      link: "https://github.com/jonathanchowjh/smu-cs-projects"
     }
   ],
   competitions: [
     {
       title: "Hack! Cardano",
       subtitle: "Cardano hackathon event to gain exclusive access to the Cardstarter Accelerator Program.",
-      title2: "Finalist, Incubated: Explorie NFT Platform",
+      title2: "First Place Winner, Incubated: Explorie NFT Platform",
       subtitle2: "An NFT platform connecting brands to people through NFT vouchers and collectables.\n" +
       "By using geo-tagged NFTs, we encourage ‘Pokemon Go’ inspired exploration of neighbourhoods and streets.",
       image: "/images/hack-cardano.png",
@@ -167,8 +172,12 @@ const initState = {
           image: "/images/plutus.png"
         },
         {
-          title: "Polygon",
-          image: "/images/polygon.png"
+          title: "Truffle",
+          image: "/images/truffle.svg"
+        },
+        {
+          title: "Anchor",
+          image: "/images/anchor.png"
         },
       ]
     },
@@ -273,6 +282,10 @@ const initState = {
         {
           title: "Haskell",
           image: "/images/haskell.svg"
+        },
+        {
+          title: "Rust",
+          image: "/images/rust-crab.png"
         }
       ]
     }

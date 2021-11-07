@@ -321,3 +321,56 @@ export const TypingDiv = (props: {
   )
 }
 
+export const SpinnerText = (props: {
+
+}) => {
+  return (
+    <div className="preloader">
+      <div className="preloader__ring">
+        {
+          "jonathan chow".split("").map((ele, idx) => {
+            return (
+              <div className="preloader__sector" key={idx}>{ele}</div>
+            )
+          })
+        }
+        {
+          "-".repeat(30 - "jonathan chow".length).split("").map((ele, idx) => {
+            return (
+              <div className="preloader__sector" key={idx}>{ele}</div>
+            )
+          })
+        }
+      </div>
+      <div className="preloader__ring">
+        {
+          "coder".split("").map((ele, idx) => {
+            return (
+              <div className="preloader__sector" key={idx}>{ele}</div>
+            )
+          })
+        }
+        {
+          "-".repeat(30 - "coder".length).split("").map((ele, idx) => {
+            return (
+              <div className="preloader__sector" key={idx}>{ele}</div>
+            )
+          })
+        }
+      </div>
+    </div>
+  )
+}
+
+export const Poster = (props: {
+
+}) => {
+  return (
+    <div>
+      <Spacer css={{ height: "7em" }} />
+      <div className="size-4">Hello, <span className="d-inline-block d-md-none">I am a</span></div>
+      <TypingDiv />
+      <Spacer css={{ height: "7em" }} />
+    </div>
+  )
+}
